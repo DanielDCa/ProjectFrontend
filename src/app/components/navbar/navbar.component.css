@@ -1,0 +1,28 @@
+
+ul{
+  padding-top: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options{
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li{
+  list-style: none;
+}
+
+
+.user{
+  padding-top: 5px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}

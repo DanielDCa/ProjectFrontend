@@ -1,0 +1,42 @@
+.home  {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.clockstrip{
+    background-color: #3F51B5;
+    height: 75vh; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.title{
+    font-size:xx-large;
+    font-weight: bold;
+    color: white;
+}
+
+.clock{
+    width: 17%;
+    height: 50%;
+
+}
+
+
+.communityimg{
+    width: 50wh;
+    height: 75vh;
+}
+
+.community{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.message{
+    font-size: x-large;
+}

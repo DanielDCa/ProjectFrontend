@@ -1,0 +1,39 @@
+
+<div class="container mt-5">
+
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <div class="card">
+  
+          <div class="card-body text-center">
+            <span class="titulo">LISTADO DE SERVICIOS</span>
+            <button class="btn btn-success float-end" routerLink="/crear-colectivo">NUEVO</button>
+  
+            <table class="table table-striped mt-3">
+              <thead>
+                <tr>
+                  <th scope="col">Descripcion</th>
+                  <th scope="col">Coste (h)</th>
+                  <th scope="col">Categorias</th>
+                  <th scope="col">Editar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let service of servicios">
+                  <th scope="row">{{service.description}}</th>
+                  <td>{{service.time_cost}}</td>
+                  <td > <span *ngFor="let categoria of service.categories"> {{categoria}}   </span></td>
+                  <td>
+                    <!-- <i class="fas fa-edit text-primary" (click)="gotoUpdate(service._id)"></i>
+                    <i class="fas fa-trash-alt" style="padding:15px" (click)="deleteService(service._id)"></i> -->
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+  
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
